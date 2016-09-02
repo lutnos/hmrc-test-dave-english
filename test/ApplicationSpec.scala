@@ -11,6 +11,10 @@ class ApplicationSpec extends PlaySpec with OneAppPerTest {
       route(app, FakeRequest(GET, "/haha")).map(status(_)) mustBe Some(NOT_FOUND)
     }
 
+    "service price one apple" in {
+      totalPrice("Apple") mustBe 0.60
+    }
+
   }
 }
 
