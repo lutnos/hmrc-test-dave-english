@@ -2,6 +2,8 @@ import org.scalatestplus.play._
 import play.api.test.Helpers._
 import play.api.test._
 
+import services.Pricing._
+
 
 class ApplicationSpec extends PlaySpec with OneAppPerTest {
 
